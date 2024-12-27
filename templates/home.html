@@ -1,0 +1,44 @@
+{% extends 'main.html' %}
+{% block content %}
+{% if message %}
+        <div class="alert alert-danger">{{ message }}</div>
+    {% endif %}
+<div class="container">
+    <div class="card card-body" style="border: 1px solid black; box-shadow: 0 0 10px black;">
+        <h2>This is Machine Learning based WebApp.</h2>
+        <br>
+        <h2>Model Accuracy:</h2>
+        <ul>
+             <li>Heart Disease Model: <strong>Almost We got 90% Accurancy</strong></li>
+        </ul>
+        <br>
+        <h3>This application can predict Heart Disease</h3>
+        <br>
+        <div class="row">
+            <div class="col-md-12 card card-body" style="box-shadow: 0 0 5px black; margin: 5px;">
+                <h4>Heart Disease</h4>
+                <p>Heart and blood vessel disease (also called heart disease) includes numerous problems, many of which are related to a process called atherosclerosis.
+				Atherosclerosis is a condition that develops when a substance called plaque builds up in the walls of the arteries. This buildup narrows the arteries, making it harder for blood to flow through. If a blood clot forms, it can block the blood flow. This can cause a heart attack or stroke.
+
+				Heart attack
+				A heart attack occurs when the blood flow to a part of the heart is blocked by a blood clot. If this clot cuts off the blood flow completely, the part of the heart muscle supplied by that artery begins to die.
+
+				Most people survive their first heart attack and return to their normal lives, enjoying many more years of productive activity. But experiencing a heart attack does mean that you need to make some changes.
+
+				The medications and lifestyle changes that your doctor recommends may vary according to how badly your heart was damaged, and to what degree of heart disease caused the heart attack.</p>
+                <h5>Symptoms</h5>
+                <ul>
+					<li>Fluttering in your chest</li>
+					<li>Racing heartbeat (tachycardia)</li>
+					<li>Slow heartbeat (bradycardia)</li>
+					<li>Chest pain or discomfort</li>
+					<li>Shortness of breath</li>
+					<li>Lightheadedness</li>
+					<li>Dizziness</li>
+					<li>Fainting (syncope) or near fainting</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
